@@ -20,7 +20,7 @@ let spans = document.querySelectorAll("span") ;
                 span.classList.toggle("load") ;
             })
         
-        let response = await fetch(`http://localhost:7777/search?q=${searchText.value.trim()}`) ;
+        let response = await fetch(`https://bexesearch.onrender.com/search?q=${searchText.value.trim()}`) ;
         
         if(!response.ok){
             status.innerHTML = "Failed to search" ;
