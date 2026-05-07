@@ -1,7 +1,7 @@
 const CACHE_NAME = "my-app-v1";
 
  const urlsToCache = [
-  "/homepage.html",
+  "/index.html",
   "/style.css",
   "/index2.js",
   "/icon-512.png"
