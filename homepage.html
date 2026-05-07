@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== BASIC META ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="icon.png">
+
+<link rel="manifest" href="/manifest.json">
+
+    <!-- ===== SEO ===== -->
+    <title>Bexe Search</title>
+    <meta name="description" content="Search engines">   
+    <meta name="keywords" content="Bonsu Alexander dev, Search engines, Bonsu alexander's search engine">
+    <meta name="author" content="Bonsu Alexander Kwakye Jnr">
+
+    <!-- ===== SOCIAL MEDIA (Open Graph) ===== -->
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Short description of your website">
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:description" content="Short description of your website">
+	    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="icon-512.png">
+
+    <!-- ===== MOBILE THEME COLOR ===== -->
+    <meta name="theme-color" content="blue">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== PRELOAD FONTS (optional) ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- ===== STRUCTURED DATA (SEO BOOST) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Your Website Name",
+        "url": "https://yourdomain.com"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="first">
+        	 <h2>Bexe</h2>
+         <p class="loader">
+           <span></span>
+           <span></span>
+           <span></span>
+         </p>
+        </div> 
+       <div class="input">
+           <input type="text" placeholder="search..." id="search"/><button onclick="search()">search</button>
+       </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main style="
+     width:100%;
+     max-width:500px;
+     padding:10px ;
+     overflow:scroll;
+    " id="main">
+        <p id="status"></p>
+       
+    </main>
+    
+
+    <!-- ===== FOOTER ===== -->
+   <!-- <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>-->
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        //Bonsu Alexander Kwakye
+        
+        
+document.body.style.maxWidth = "500px" ;
+
+        
+    /*   if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(reg => {
+        console.log("Service Worker registered:", reg.scope);
+      })
+      .catch(err => {
+        console.log("Service Worker registration failed:", err);
+      });
+  });
+} 
+*/
+    </script>
+    <script src="index2.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html{
+    background: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    margin-top :10px;
+    padding: 5px 10px;
+    
+}
+
+main .info{
+    width :100%;
+    flex-grow:1;
+}
+
+.info div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.info div img {
+    width :45px;
+    height: 48px;
+    border-radius:10px;
+}
+
+.info a{
+    color:green;
+    text-decoration:none;
+
+    display:block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    flex:0;
+    position: sticky;
+    gap:10px;
+    border: none;
+    width: 100%;
+    left:50%;
+    background :rgba(0,0,0,0.1);
+    backdrop-filter: blur(50px);
+    top: 2px;
+    border-radius:10px ;
+    box-shadow: 4px 6px 5px rgba(0,0,0,0.3);
+}
+
+.first{
+    width: 100%;
+    display: flex;
+    border:none;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first h2{
+    color:blue;
+    font-weight: bold;
+}
+
+.loader{
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
+
+ span{
+    width: 20px;
+    height: 20px;
+    flex:1;
+    background: grey;
+    border-radius:10px;
+ }
+
+span:nth-child(1){
+    animation-delay: 1s;
+}
+span:nth-child(2){
+    animation-delay: 2s;
+}
+span:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load{
+    0% , 100%{
+        transform: scale(0.7);
+    }50%{
+        transform: scale(1.1);
+    }
+}
+
+span.load{
+    animation: load 0.8s linear infinite;
+
+}
+
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.input input{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: #999;
+    width: 70%;
+}
+
+.input button{
+    padding: 10px 15px;
+    width: 30%;
+    border-radius:10px;
+    border: none;
+    outline:none;
+    font-size: 20px;
+    background: rgba(31, 22, 199,0.5);
+    font-weight: bold;
+}

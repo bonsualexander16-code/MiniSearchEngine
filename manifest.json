@@ -1,0 +1,21 @@
+{
+  "short_name": "Bexe",
+  "name": "Bexe",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./homepage.html",
+  "background_color": "#0000ff",
+  "display": "standalone",
+  "theme_color": "#317EFB",
+  "description": "A search engine built on top of a custom backend.."
+}
